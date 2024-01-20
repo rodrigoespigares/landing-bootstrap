@@ -35,7 +35,7 @@ Con este proyecto he aprendido a gestionar Bootstrap y los componentes que este 
 
 https://rodrigoespigares.github.io/landing-bootstrap/
 
-> [!INFO]
+> [!IMPORTANT]
 > Las mediaquery han sido hechas mediante las clases y con los puntos de ruptura de bootstrap 5.3.1
 
 ## Authors
