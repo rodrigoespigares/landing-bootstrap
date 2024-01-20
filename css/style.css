@@ -51,44 +51,54 @@
     .w-md-50 { width: 50%!important; }
 }
 
-/*Propios*/
+/*Estilos propios*/
+/*Por defecto a todas las imagenes*/
 img {
     width: inherit;
     height: inherit;
     object-fit: cover;
 }
+/*INICIO*/
 .inicio__sesion{
     font-size: 3.5rem;
 }
+/*SECCION PRECION*/
 #precios{
     min-height: 50vh;
 }
+/*Clases para colores iconos tabla*/
 .check{
     color: green;
 }
 .err{
     color: darkred;
 }
+/*SECCION PRODUCTO*/
 #producto{
 	background-color: var(--color-primario-ceroTres);
 	width: var(--ancho-default);
 	min-height: 70vh;
 }
+/*PREGUNTAS FRECUENTES*/
 #faq{
     min-height: 50vh;
 	width: var(--ancho-default);
 	background-color: var(--color-primario-ceroTres);
 }
+/*Ajuste acordeon*/
 #faq .acordeon{
 	width: 50vw;
 }
+/*Cambio al articulo*/
 #faq .acordeon article{
 	width: var(--ancho-default);
 }
+/*FOOTER*/
 #footer a{
     text-decoration: none;
     color: black;
 }
+/*MODAL inicio sesion y registro*/
 #login__register .form a {
 	text-decoration: none;
 }
