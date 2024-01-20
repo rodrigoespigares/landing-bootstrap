@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Your to do list</title>
@@ -53,7 +53,7 @@
         </nav>
         <!-- LANZA MODEL PARA INICIO DE SESIÓN -->
         <button type="button" class="btn inicio__sesion" data-bs-toggle="modal" data-bs-target="#register">
-            <i class="ri-user-3-line"></i>
+            <i class="ri-user-3-line text-secondary"></i>
         </button>
     </header>
     <main class="d-flex flex-column justify-content-between align-items-center">
@@ -71,18 +71,18 @@
                 <!-- BOTONES DEL CARRUSEL -->
                 <section class="carousel-indicators">
                     <article data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active border border-primary" aria-current="true" aria-label="Slide 1">
+                        class="active border border-secondary" aria-current="true" aria-label="Slide 1">
                         <p class="display-6">Crea</p>
                         <div>
                             <p class="fs-5 text-center">Crea tus notas con solo inciar sesión y gestiona todas ellas.</p>
                         </div>
                     </article>
-                    <article data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="border border-primary"
+                    <article data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="border border-secondary"
                         aria-label="Slide 2">
                         <p class="display-6">Organiza</p>
                         <p class="fs-5 text-center">Organiza tus tareas diarias para ser más productivo con tu día.</p>
                     </article>
-                    <article data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="border border-primary"
+                    <article data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="border border-secondary"
                         aria-label="Slide 3">
                         <p class="display-6">Completa</p>
                         <p class="fs-5 text-center">Gestiona tus notas y marcalas como completadas.</p>
@@ -230,17 +230,18 @@
             </section>
         </section>
         <!-- SECCIÓN FINAL -->
-        <section id="end" class="d-flex align-items-center gap-5">
-            <div class="d-flex flex-column align-items-center gap-5">
-                <h2 class="display-1 text-center">Empieza ahora gratis</h2>
-                <button class="btn btn-primary fs-3" data-bs-toggle="modal" data-bs-target="#register">Empezar ahora</button>
+        <section id="end" class="d-flex align-items-center gap-5 py-5 py-md-0">
+            <div class="d-flex flex-column align-items-center gap-2">
+                <h2 class="display-3 text-center">Empieza ahora gratis</h2>
+                <button class="btn btn-secondary fs-3" data-bs-toggle="modal" data-bs-target="#register">Empezar ahora</button>
             </div>
             <div class="w-100">
                 <img src="./img/start-now.webp" alt="Imagen de gente caminando">
             </div>
         </section>
     </main>
-    <footer id="footer" class="d-flex flex-column flex-md-row align-items-center pt-5 justify-content-around fs-3 border-top border-primary text-center">
+    <!-- FOOTER -->
+    <footer id="footer" class="d-flex flex-column flex-md-row align-items-center pt-5 justify-content-around fs-3 border-top border-primary text-center pb-md-5">
         <section id="footer__help">
             <h3 class="display-4">Ayuda</h3>
             <ul class="list-group list-group-flush">
@@ -301,21 +302,24 @@
                         <h2 class="display-1">Crear una cuenta</h2>
                         <div class="d-flex justify-content-center c">
                             <button type="button" class="btn rounded-circle fs-1">
-                                <i class="ri-google-fill"></i>
+                                <i class="ri-google-fill text-secondary"></i>
                             </button>
                             <button type="button" class="btn rounded-circle fs-1">
-                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-facebook-fill text-secondary"></i>
                             </button>
                             <button type="button" class="btn rounded-circle fs-1">
-                                <i class="ri-github-line"></i>
+                                <i class="ri-github-line text-secondary"></i>
                             </button>
                         </div>
-                        <span>o usa un email para registrarte</span>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email"/>
-                        <input type="password" placeholder="Password"/>
-                        <span>para iniciar sesión haz <a role="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#login">click aqui</a></span>
-                        <button class="btn btn-primary fs-3">Registro</button>
+                        <span class="fs-4">o usa un email para registrarte</span>
+                        <label class="fs-4 text-primary w-100" for="name">Nombre</label>
+                        <input type="text" class="fs-4" placeholder="Nombre" id="name"/>
+                        <label class="fs-4 text-primary w-100" for="email">Email</label>
+                        <input type="email" class="fs-4" placeholder="Email" id="email"/>
+                        <label class="fs-4 text-primary w-100" for="pass">Contraseña</label>
+                        <input type="password" class="fs-4" placeholder="Password" id="pass"/>
+                        <span class="fs-4">para iniciar sesión haz <a role="button" class="text-secondary"data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#login">click aqui</a></span>
+                        <button class="btn btn-secondary fs-3">Registro</button>
                     </div>
                 </div>
             </div>
@@ -333,20 +337,22 @@
                         <h2 class="display-1">Iniciar sesión</h2>
                         <div class="d-flex justify-content-center c">
                             <button type="button" class="btn rounded-circle fs-1">
-                                <i class="ri-google-fill"></i>
+                                <i class="ri-google-fill text-secondary"></i>
                             </button>
                             <button type="button" class="btn rounded-circle fs-1">
-                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-facebook-fill text-secondary"></i>
                             </button>
                             <button type="button" class="btn rounded-circle fs-1">
-                                <i class="ri-github-line"></i>
+                                <i class="ri-github-line text-secondary"></i>
                             </button>
                         </div>
-                        <span>o usa un email para iniciar sesión</span>
-                        <input type="email" placeholder="Email"/>
-                        <input type="password" placeholder="Password"/>
-                        <span>para registrarte haz <a role="button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register">click aqui</a></span>
-                        <button class="btn btn-primary fs-3">Inicio Sesión</button>
+                        <span class="fs-4">o usa un email para iniciar sesión</span>
+                        <label class="fs-4 text-primary w-100" for="email">Email</label>
+                        <input class="fs-4" type="email" placeholder="Email" id="email"/>
+                        <label class="fs-4 text-primary w-100" for="pass">Contraseña</label>
+                        <input class="fs-4" type="password" placeholder="Contraseña" id="pass"/>
+                        <span class="fs-4">para registrarte haz <a role="button" class="text-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register">click aqui</a></span>
+                        <button class="btn btn-secondary fs-3">Inicio Sesión</button>
                     </div>
                 </div>
             </div>
@@ -362,5 +368,4 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
